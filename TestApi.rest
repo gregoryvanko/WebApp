@@ -9,7 +9,7 @@ content-type: {{contentType}}
 POST http://{{hostname}}/posts
 content-type: {{contentType}}
 
-{"title":"Post 1", "content":"Lorem ipsum"}
+{"title":"Post 2", "content":"coucou Greg"}
 
 ### Get Posts by id
 GET http://{{hostname}}/posts/68ab3ca51723d51654e1d7d8
