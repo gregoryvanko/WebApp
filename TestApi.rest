@@ -1,0 +1,26 @@
+@hostname = 0.0.0.0:9999
+@contentType = application/json
+
+### Get Posts
+GET http://{{hostname}}/posts
+content-type: {{contentType}}
+
+### Post Posts
+POST http://{{hostname}}/posts
+content-type: {{contentType}}
+
+{"title":"Post 1", "content":"Lorem ipsum"}
+
+### Get Posts by id
+GET http://{{hostname}}/posts/68ab3ca51723d51654e1d7d8
+content-type: {{contentType}}
+
+### Patch post by id
+PATCH http://{{hostname}}/posts/68ab3ca51723d51654e1d7d8
+content-type:{{contentType}}
+
+{"title":"Post 2", "content":"coucou greg"}
+
+### Delete post by id
+DELETE http://{{hostname}}/posts/68ab3ca51723d51654e1d7d8
+content-type:{{contentType}}

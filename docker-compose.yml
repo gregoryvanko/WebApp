@@ -1,0 +1,11 @@
+services:
+  test:
+    container_name: test
+    build:
+      context: ./
+    ports:
+      - 9999:9999
+   # volumes:
+   #   - .:/usr/src/app
+   # environment:
+   #   - NODE_ENV=development
